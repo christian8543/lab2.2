@@ -1,1 +1,2 @@
 # lab2.2
+const int ledPin = 2;  // LED connected to digital pin 2 const int potPin = A0; // Potentiometer connected to analog pin A0 const int threshold = 400; // Threshold value for turning on the LED  void setup() {   Serial.begin(9600);  // Start serial communication   pinMode(ledPin, OUTPUT); // Set LED pin as an output }  void loop() {   int knobValue = analogRead(potPin); // Read potentiometer value   Serial.println(knobValue); // Print value to Serial Monitor    if (knobValue > thre
